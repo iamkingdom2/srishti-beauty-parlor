@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>सृष्टि ब्यूटी पार्लर</title>
+    <style>
+        body { font-family: Arial; text-align: center; background-color: #fff0f5; }
+        .card { background: white; padding: 20px; border-radius: 15px; margin: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        button { background-color: #ff69b4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>सृष्टि ब्यूटी पार्लर</h1>
+    <div class="card">
+        <p>हमारी सेवाएँ: ब्राइडल मेकअप, फेशियल, हेयर कटिंग</p>
+        <p>पता: शॉप नंबर 12, मेन मार्केट, दिल्ली</p>
+        <button onclick="window.location.href='https://wa.me/919876543210'">WhatsApp पर बुकिंग करें</button>
+    </div>
+</body>
+</html>
