@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>सृष्टि ब्यूटी पार्लर</title>
+    <title>प्रिया लेडीज ब्यूटी पार्लर</title>
     <style>
-        body { font-family: 'Arial', sans-serif; text-align: center; background-color: #fff0f5; padding: 20px; margin: 0; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 400px; margin: 40px auto; border: 2px solid #ff69b4; }
-        h1 { color: #d63384; margin-bottom: 10px; }
-        img { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #eee; }
-        p { color: #555; line-height: 1.6; }
-        .services { font-weight: bold; color: #ff1493; margin: 15px 0; }
-        .btn { background-color: #25d366; color: white; padding: 15px 30px; border: none; border-radius: 50px; font-size: 18px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px; font-weight: bold; }
+        /* Modern CSS for Video-like Look */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #fdf2f8; }
+        
+        /* Hero Section (Main Heading) */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800');
+            background-size: cover; background-position: center; height: 80vh; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;
+        }
+        .hero h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-top: 10px; }
+
+        /* Service Cards */
+        .services-container { padding: 40px 20px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-info { padding: 20px; }
+        .card-info h3 { margin: 0; color: #d63384; }
+        .price { font-weight: bold; color: #333; margin: 10px 0; }
+
+        /* Buttons */
+        .btn-main { background-color: #d63384; color: white; padding: 15px 30px; border: none; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500" alt="Beauty Parlor">
-        
-        <h1>सृष्टि ब्यूटी पार्लर</h1>
-        <p class="services">ब्राइडल मेकअप • फेशियल • हेयर कटिंग • मेहंदी</p>
-        <hr style="border: 0.5px solid #eee;">
-        <p><strong>पता:</strong> शॉप नंबर 12, मेन मार्केट, नई दिल्ली</p>
-        
-        <a href="https://wa.me/919569694327" class="btn">WhatsApp पर बुकिंग करें</a>
+    <div class="hero">
+        <h1>प्रिया लेडीज ब्यूटी पार्लर</h1>
+        <p>सिर्फ ब्यूटी सर्विसेज ही नहीं, बल्कि एक नया आत्मविश्वास</p>
+        <a href="#booking" class="btn-main">अपॉइंटमेंट बुक करें</a>
+    </div>
+
+    <div class="services-container">
+        <h2>हमारी सेवाएँ</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400" alt="Makeup">
+                <div class="card-info">
+                    <h3>ब्राइडल मेकअप</h3>
+                    <p class="price">₹15,000 से शुरू</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=400" alt="Facial">
+                <div class="card-info">
+                    <h3>फेशियल और ग्लो</h3>
+                    <p class="price">₹1,500 से शुरू</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
